@@ -1,0 +1,14 @@
+@import "../partials/_variables";
+@import "../partials/mixins";
+
+body {
+  background: $background-color;
+}
+
+@include headings {
+  color: $font-color;
+}
+
+p {
+  color: $font-color;
+}
