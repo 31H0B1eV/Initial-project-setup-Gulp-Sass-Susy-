@@ -1,0 +1,24 @@
+@import "../partials/variables";
+@import "../partials/mixins";
+@import "../../bower_components/susy/sass/susy";
+
+body {
+  background: $background-color;
+}
+
+@include headings {
+  color: $font-color;
+  text-align: center;
+}
+
+p {
+  color: $font-color;
+  text-align: justify;
+}
+
+p:first-letter {
+  font-size: 1.5rem;
+  font-style: oblique;
+  padding: 2px;
+  margin-left: 15px;
+}

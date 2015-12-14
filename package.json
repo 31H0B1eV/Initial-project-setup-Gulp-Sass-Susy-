@@ -1,13 +1,21 @@
 {
   "name": "application-name",
   "version": "0.0.1",
-  "devDependencies": {
-    "gulp": "latest",
-    "gulp-util": "latest",
-    "gulp-sass": "latest",
-    "gulp-autoprefixer": "latest",
-    "gulp-minify-css": "latest",
-    "gulp-rename": "latest",
-    "browser-sync": "latest"
-  }
+  "main": "Gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.1",
+    "gulp-util": "^3.0.7",
+    "gulp-concat": "^2.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

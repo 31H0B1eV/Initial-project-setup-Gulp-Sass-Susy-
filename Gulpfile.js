@@ -14,23 +14,23 @@ var sassFiles = "./sass/**/*.scss";
 gulp.task('serve', ['sass'], function() {
 
     browserSync.init({
-        server: "."
+        server: "./app"
     });
 
     gulp.watch(sassFiles, ["sass"]);
-    gulp.watch("*.html").on('change', browserSync.reload);
-    gulp.watch("./css/*.min.css").on('change', browserSync.reload);
+    gulp.watch("./app/*.html").on('change', browserSync.reload);
+    gulp.watch("./app/css/*.min.css").on('change', browserSync.reload);
 });
 
-gulp.task("sass", function(){ 
+gulp.task("sass", function(){
     log("Generate CSS files " + (new Date()).toString());
     gulp.src(sassFiles)
         .pipe(sass({ style: 'expanded' }))
         .pipe(autoprefixer("last 3 version","safari 5", "ie 8", "ie 9"))
-        .pipe(gulp.dest("./css"))
+        .pipe(gulp.dest("./app/css"))
         .pipe(rename({suffix: '.min'}))
         .pipe(minifycss())
-        .pipe(gulp.dest('./css'));
+        .pipe(gulp.dest('./app/css'));
 });
 
 gulp.task("watch", function(){
