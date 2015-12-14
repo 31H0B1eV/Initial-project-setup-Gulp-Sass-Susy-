@@ -1,0 +1,17 @@
+body {
+  background: #FFFFFF; }
+
+h1, h2, h3,
+h4, h5, h6 {
+  color: #303F9F;
+  text-align: center; }
+
+p {
+  color: #303F9F;
+  text-align: justify; }
+
+p:first-letter {
+  font-size: 1.5rem;
+  font-style: oblique;
+  padding: 2px;
+  margin-left: 15px; }

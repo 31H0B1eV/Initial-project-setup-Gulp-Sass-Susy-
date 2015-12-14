@@ -1,0 +1,23 @@
+{
+  "name": "application-name",
+  "description": "",
+  "main": "Gulpfile.js",
+  "authors": [
+    "Artem Zinoviev <arzinoviev@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "~2.2.9"
+  }
+}
